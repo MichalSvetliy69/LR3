@@ -12,9 +12,40 @@ using System.Windows.Forms;
 
 namespace FW1
 {
+
   
     public partial class Form1 : Form
     {
+
+        int _x;
+        int _y;
+
+
+        bool _mouseClicked = false;
+
+        Color SelectedColor
+        {
+            get { return Color.Red; }
+        }
+
+        int SelectedSize
+        {
+            get { return trackBar1.Value*2; }
+        }
+
+        Brush _selectedBrush;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         void CreateBlank(int width, int height)
@@ -51,33 +82,16 @@ namespace FW1
 
         }
 
-        private void btnHello_Click(object sender, EventArgs e)
-        {
-            string UserName = tbName.Text.Trim();
-            if (UserName.Length < 3)
-            {
-                MessageBox.Show("Введите имя пользователя:");
-            }
-            else
-            {
-                MessageBox.Show("Привет " + UserName);
-            }
-        }
+        
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+     
 
         private void Form1_Click(object sender, EventArgs e)
         {
            
         }
 
-        private void tbName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -136,17 +150,80 @@ namespace FW1
 
         private void Brush2_Click(object sender, EventArgs e)
         {
-
+            _selectedBrush = new RandBrush(SelectedColor, SelectedSize);
         }
 
         private void brush1_Click(object sender, EventArgs e)
         {
-
+            _selectedBrush = new QuadBrush(SelectedColor, SelectedSize);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (_selectedBrush == null)
+            {
+                return;
+            }
+            _selectedBrush.Draw(pictureBox1.Image as Bitmap , _x, _y);
+            pictureBox1.Refresh();
+            _mouseClicked = true;
+        }
+
+        private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
+        {
+            _mouseClicked = false;
+        }
+
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            _x = e.X > 0 ? e.X : 0;
+            _y = e.Y > 0 ? e.Y : 0;
+            if (_mouseClicked)
+            {
+                _selectedBrush.Draw(pictureBox1.Image as Bitmap, _x, _y);
+                pictureBox1.Refresh();
+
+            }
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void toolStripButton1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Brush4_Click(object sender, EventArgs e)
+        {
+            _selectedBrush = new Circle(SelectedColor, SelectedSize);
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CreateBlank(pictureBox1.Width, pictureBox1.Height);
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
