@@ -20,3 +20,14 @@ C:\Users\Михаил\OneDrive\Документы\GitHub\LR3\FW1\FW1\obj\Debug\F
 C:\Users\Михаил\OneDrive\Документы\GitHub\LR3\FW1\FW1\bin\Debug\FW1.exe.config
 C:\Users\Михаил\OneDrive\Документы\GitHub\LR3\FW1\FW1\bin\Debug\FW1.exe
 C:\Users\Михаил\OneDrive\Документы\GitHub\LR3\FW1\FW1\bin\Debug\FW1.pdb
+C:\Users\mihan\OneDrive\Документы\GitHub\LR3\FW1\FW1\bin\Debug\FW1.exe.config
+C:\Users\mihan\OneDrive\Документы\GitHub\LR3\FW1\FW1\bin\Debug\FW1.exe
+C:\Users\mihan\OneDrive\Документы\GitHub\LR3\FW1\FW1\bin\Debug\FW1.pdb
+C:\Users\mihan\OneDrive\Документы\GitHub\LR3\FW1\FW1\obj\Debug\FW1.csproj.AssemblyReference.cache
+C:\Users\mihan\OneDrive\Документы\GitHub\LR3\FW1\FW1\obj\Debug\FW1.csproj.SuggestedBindingRedirects.cache
+C:\Users\mihan\OneDrive\Документы\GitHub\LR3\FW1\FW1\obj\Debug\FW1.Form1.resources
+C:\Users\mihan\OneDrive\Документы\GitHub\LR3\FW1\FW1\obj\Debug\FW1.Properties.Resources.resources
+C:\Users\mihan\OneDrive\Документы\GitHub\LR3\FW1\FW1\obj\Debug\FW1.csproj.GenerateResource.cache
+C:\Users\mihan\OneDrive\Документы\GitHub\LR3\FW1\FW1\obj\Debug\FW1.csproj.CoreCompileInputs.cache
+C:\Users\mihan\OneDrive\Документы\GitHub\LR3\FW1\FW1\obj\Debug\FW1.exe
+C:\Users\mihan\OneDrive\Документы\GitHub\LR3\FW1\FW1\obj\Debug\FW1.pdb

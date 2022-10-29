@@ -225,5 +225,10 @@ namespace FW1
         {
             Application.Exit();
         }
+
+        private void Brush3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
