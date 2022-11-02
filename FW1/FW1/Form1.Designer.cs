@@ -45,6 +45,7 @@
             this.aboutProgrammToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.clearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolPanel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
@@ -59,9 +60,8 @@
             this.toolPanel.Controls.Add(this.menuStrip1);
             this.toolPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.toolPanel.Location = new System.Drawing.Point(0, 0);
-            this.toolPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.toolPanel.Name = "toolPanel";
-            this.toolPanel.Size = new System.Drawing.Size(452, 764);
+            this.toolPanel.Size = new System.Drawing.Size(339, 621);
             this.toolPanel.TabIndex = 10;
             this.toolPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -72,11 +72,9 @@
             this.groupBox1.Controls.Add(this.Brush3);
             this.groupBox1.Controls.Add(this.trackBar1);
             this.groupBox1.Controls.Add(this.Brush2);
-            this.groupBox1.Location = new System.Drawing.Point(0, 33);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(0, 27);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(452, 368);
+            this.groupBox1.Size = new System.Drawing.Size(339, 299);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Выбор кисти";
@@ -86,10 +84,9 @@
             this.brush1.BackgroundImage = global::FW1.Properties.Resources.Снимок1;
             this.brush1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.brush1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.brush1.Location = new System.Drawing.Point(16, 98);
-            this.brush1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.brush1.Location = new System.Drawing.Point(12, 80);
             this.brush1.Name = "brush1";
-            this.brush1.Size = new System.Drawing.Size(69, 62);
+            this.brush1.Size = new System.Drawing.Size(52, 50);
             this.brush1.TabIndex = 1;
             this.brush1.UseVisualStyleBackColor = true;
             this.brush1.Click += new System.EventHandler(this.brush1_Click);
@@ -99,10 +96,9 @@
             this.Brush4.BackgroundImage = global::FW1.Properties.Resources.Снимок3;
             this.Brush4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Brush4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Brush4.Location = new System.Drawing.Point(195, 98);
-            this.Brush4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Brush4.Location = new System.Drawing.Point(146, 80);
             this.Brush4.Name = "Brush4";
-            this.Brush4.Size = new System.Drawing.Size(67, 62);
+            this.Brush4.Size = new System.Drawing.Size(50, 50);
             this.Brush4.TabIndex = 4;
             this.Brush4.UseVisualStyleBackColor = true;
             this.Brush4.Click += new System.EventHandler(this.Brush4_Click);
@@ -112,10 +108,9 @@
             this.Brush3.BackgroundImage = global::FW1.Properties.Resources.Снимок2;
             this.Brush3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Brush3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Brush3.Location = new System.Drawing.Point(287, 98);
-            this.Brush3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Brush3.Location = new System.Drawing.Point(215, 80);
             this.Brush3.Name = "Brush3";
-            this.Brush3.Size = new System.Drawing.Size(69, 62);
+            this.Brush3.Size = new System.Drawing.Size(52, 50);
             this.Brush3.TabIndex = 3;
             this.Brush3.UseVisualStyleBackColor = true;
             this.Brush3.Click += new System.EventHandler(this.Brush3_Click);
@@ -124,11 +119,10 @@
             // 
             this.trackBar1.AutoSize = false;
             this.trackBar1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.trackBar1.Location = new System.Drawing.Point(4, 19);
-            this.trackBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.trackBar1.Location = new System.Drawing.Point(3, 16);
             this.trackBar1.Maximum = 20;
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(444, 59);
+            this.trackBar1.Size = new System.Drawing.Size(333, 48);
             this.trackBar1.TabIndex = 0;
             this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.Both;
             this.trackBar1.Value = 2;
@@ -139,10 +133,9 @@
             this.Brush2.BackgroundImage = global::FW1.Properties.Resources.Снимок11;
             this.Brush2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Brush2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Brush2.Location = new System.Drawing.Point(107, 98);
-            this.Brush2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Brush2.Location = new System.Drawing.Point(80, 80);
             this.Brush2.Name = "Brush2";
-            this.Brush2.Size = new System.Drawing.Size(67, 62);
+            this.Brush2.Size = new System.Drawing.Size(50, 50);
             this.Brush2.TabIndex = 2;
             this.Brush2.UseVisualStyleBackColor = true;
             this.Brush2.Click += new System.EventHandler(this.Brush2_Click);
@@ -156,7 +149,8 @@
             this.referenceToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(452, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(339, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -165,35 +159,36 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openToolStripMenuItem,
             this.saveToolStripMenuItem,
-            this.saveToolStripMenuItem1});
+            this.saveToolStripMenuItem1,
+            this.clearToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem.Text = "Create";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem.Text = "Open";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem1
             // 
             this.saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
-            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(135, 26);
+            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem1.Text = "Save";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(47, 24);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -202,31 +197,31 @@
             this.referenceToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutProgrammToolStripMenuItem});
             this.referenceToolStripMenuItem.Name = "referenceToolStripMenuItem";
-            this.referenceToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
+            this.referenceToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.referenceToolStripMenuItem.Text = "Reference";
             // 
             // aboutProgrammToolStripMenuItem
             // 
             this.aboutProgrammToolStripMenuItem.Name = "aboutProgrammToolStripMenuItem";
-            this.aboutProgrammToolStripMenuItem.Size = new System.Drawing.Size(206, 26);
+            this.aboutProgrammToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.aboutProgrammToolStripMenuItem.Text = "about programm";
             // 
             // panel1
             // 
+            this.panel1.AutoScroll = true;
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(457, 49);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(339, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1228, 720);
+            this.panel1.Size = new System.Drawing.Size(918, 621);
             this.panel1.TabIndex = 11;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1228, 720);
+            this.pictureBox1.Size = new System.Drawing.Size(921, 585);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -234,16 +229,23 @@
             this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
             // 
+            // clearToolStripMenuItem
+            // 
+            this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
+            this.clearToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clearToolStripMenuItem.Text = "Clear";
+            this.clearToolStripMenuItem.Click += new System.EventHandler(this.clearToolStripMenuItem_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1676, 764);
+            this.ClientSize = new System.Drawing.Size(1257, 621);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "tbText";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -255,6 +257,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -278,6 +281,7 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem referenceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutProgrammToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clearToolStripMenuItem;
     }
 }
 
