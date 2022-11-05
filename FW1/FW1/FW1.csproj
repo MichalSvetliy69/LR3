@@ -112,5 +112,23 @@
   <ItemGroup>
     <None Include="Pictures\Снимок2.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="colors\MyBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="colors\MyBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="colors\MyGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="colors\MyRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="colors\MyYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="colors\MyWhite.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -32,3 +32,4 @@ C:\Users\mihan\OneDrive\Документы\GitHub\LR3\FW1\FW1\obj\Debug\FW1.cspr
 C:\Users\mihan\OneDrive\Документы\GitHub\LR3\FW1\FW1\obj\Debug\FW1.exe
 C:\Users\mihan\OneDrive\Документы\GitHub\LR3\FW1\FW1\obj\Debug\FW1.pdb
 C:\Users\Михаил\OneDrive\Документы\GitHub\LR3\FW1\FW1\obj\Debug\FW1.Create.resources
+C:\Users\mihan\OneDrive\Документы\GitHub\LR3\FW1\FW1\obj\Debug\FW1.Create.resources

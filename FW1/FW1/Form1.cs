@@ -27,9 +27,10 @@ namespace FW1
 
         bool _mouseClicked = false;
 
+        Color MyColor;
         Color SelectedColor
         {
-            get { return Color.Red; }
+            get { return MyColor; }
         }
 
         int SelectedSize
@@ -284,6 +285,36 @@ namespace FW1
         private void clearToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CreateBlank(pictureBox1.Width, pictureBox1.Height);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MyColor = Color.Black;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            MyColor = Color.Blue;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            MyColor = Color.Green;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MyColor = Color.Red;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MyColor = Color.Yellow;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MyColor = Color.White;
         }
 
         private void Brush3_Click(object sender, EventArgs e)
