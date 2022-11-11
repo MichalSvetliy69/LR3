@@ -73,6 +73,96 @@ namespace FW1.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1654331157_4_flomaster_club_p_lastik_risunok_dlya_detei_krasivo_4 {
+            get {
+                object obj = ResourceManager.GetObject("1654331157_4-flomaster-club-p-lastik-risunok-dlya-detei-krasivo-4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1654331157_4_flomaster_club_p_lastik_risunok_dlya_detei_krasivo_41 {
+            get {
+                object obj = ResourceManager.GetObject("1654331157_4-flomaster-club-p-lastik-risunok-dlya-detei-krasivo-41", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1654331157_4_flomaster_club_p_lastik_risunok_dlya_detei_krasivo_42 {
+            get {
+                object obj = ResourceManager.GetObject("1654331157_4-flomaster-club-p-lastik-risunok-dlya-detei-krasivo-42", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1654331157_4_flomaster_club_p_lastik_risunok_dlya_detei_krasivo_43 {
+            get {
+                object obj = ResourceManager.GetObject("1654331157_4-flomaster-club-p-lastik-risunok-dlya-detei-krasivo-43", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1654331157_4_flomaster_club_p_lastik_risunok_dlya_detei_krasivo_44 {
+            get {
+                object obj = ResourceManager.GetObject("1654331157_4-flomaster-club-p-lastik-risunok-dlya-detei-krasivo-44", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Brush1 {
+            get {
+                object obj = ResourceManager.GetObject("Brush1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Brush2 {
+            get {
+                object obj = ResourceManager.GetObject("Brush2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Brush3 {
+            get {
+                object obj = ResourceManager.GetObject("Brush3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Brush4 {
+            get {
+                object obj = ResourceManager.GetObject("Brush4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MyBlack {
             get {
                 object obj = ResourceManager.GetObject("MyBlack", resourceCulture);

@@ -13,6 +13,12 @@ namespace FW1
 {
     abstract class Brush
     {
+        public static int W, H;
+        public static void GetSize(int w, int h)
+        {
+            W = w;
+            H = h;
+        }
         public Color BrushColor { get; set; }
         public int Size { get; set; }
         public Brush(Color brushColor, int size)

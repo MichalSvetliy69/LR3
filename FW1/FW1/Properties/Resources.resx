@@ -118,43 +118,70 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="MyYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\colors\MyYellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Снимок3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\Снимок.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MyBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\colors\MyBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Снимок1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\Снимок.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="references_3840x2160_iw049" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\references_3840x2160_iw049.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MyGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\colors\MyGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Снимок" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Снимок.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MyBlack" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\colors\MyBlack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MyRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\colors\MyRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Brush1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Brush1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1654137567_1-celes-club-p-programmirovanie-oboi-krasivie-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1654137567_1-celes-club-p-programmirovanie-oboi-krasivie-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Снимок2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\Снимок2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Снимок11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pictures\Снимок1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MyGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\colors\MyGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Снимок2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Снимок2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1654331157_4-flomaster-club-p-lastik-risunok-dlya-detei-krasivo-42" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\1654331157_4-flomaster-club-p-lastik-risunok-dlya-detei-krasivo-4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brush3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Brush3.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MyYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\colors\MyYellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MyWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\colors\MyWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Снимок3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Снимок.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1654331157_4-flomaster-club-p-lastik-risunok-dlya-detei-krasivo-4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\1654331157_4-flomaster-club-p-lastik-risunok-dlya-detei-krasivo-4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1654331157_4-flomaster-club-p-lastik-risunok-dlya-detei-krasivo-44" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\1654331157_4-flomaster-club-p-lastik-risunok-dlya-detei-krasivo-4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MyBlack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\colors\MyBlack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="references_3840x2160_iw049" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\references_3840x2160_iw049.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Снимок" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Снимок.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MyRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\colors\MyRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Снимок1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Снимок.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1654331157_4-flomaster-club-p-lastik-risunok-dlya-detei-krasivo-41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\1654331157_4-flomaster-club-p-lastik-risunok-dlya-detei-krasivo-4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1654331157_4-flomaster-club-p-lastik-risunok-dlya-detei-krasivo-43" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\1654331157_4-flomaster-club-p-lastik-risunok-dlya-detei-krasivo-4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brush2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Brush2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MyBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\colors\MyBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brush4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\Brush4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

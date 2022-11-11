@@ -8,9 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-
-
-
 namespace FW1
 {
 
@@ -18,8 +15,11 @@ namespace FW1
     public partial class Form1 : Form
     {
 
+        Image image1;
 
-        double ImW = 1, ImH = 1;
+
+        int ImW, ImH;
+        string MyBrush;
 
         int _x;
         int _y;
@@ -55,20 +55,31 @@ namespace FW1
 
         void CreateBlank(int width, int height)
         {
-            var OldImage = pictureBox1.Image;
-            var bmp = new Bitmap(width, height, System.Drawing.Imaging.PixelFormat.Format24bppRgb);
-            for (int i = 0; i < width; i++)
+
+            try
             {
-                for (int j = 0; j < height; j++)
+                var OldImage = pictureBox1.Image;
+                var bmp = new Bitmap(width, height, System.Drawing.Imaging.PixelFormat.Format24bppRgb);
+                ImW = bmp.Width;
+                ImH = bmp.Height;
+                for (int i = 0; i < width; i++)
                 {
-                    bmp.SetPixel(i, j, DefaultColor);
+                    for (int j = 0; j < height; j++)
+                    {
+                        bmp.SetPixel(i, j, DefaultColor);
+                    }
+                }
+                pictureBox1.Image = bmp;
+                if (OldImage != null)
+                {
+                    OldImage.Dispose();
                 }
             }
-            pictureBox1.Image = bmp;
-            if (OldImage != null)
+            catch (Exception)
             {
-                OldImage.Dispose();
+
             }
+  
 
         }
         Color DefaultColor
@@ -80,6 +91,7 @@ namespace FW1
             InitializeComponent();
 
             CreateBlank(pictureBox1.Width, pictureBox1.Height);
+            Brush.GetSize(pictureBox1.Width, pictureBox1.Height);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -156,11 +168,13 @@ namespace FW1
         private void Brush2_Click(object sender, EventArgs e)
         {
             _selectedBrush = new RandBrush(SelectedColor, SelectedSize);
+            MyBrush = "RandBrush";
         }
 
         private void brush1_Click(object sender, EventArgs e)
         {
             _selectedBrush = new QuadBrush(SelectedColor, SelectedSize);
+            MyBrush = "QuadBrush";
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -183,10 +197,20 @@ namespace FW1
         {
 
             _mouseClicked = false;
-            if (_selectedBrush.ToString() == "FW1.Transparent")
+            try
             {
-                _selectedBrush = new Transparent(SelectedColor, SelectedSize, pictureBox1.Width, pictureBox1.Height);
+                if (MyBrush == "Transparent") /*_selectedBrush.ToString() == "FW1.Transparent*/
+                {
+                    
+                    _selectedBrush = new Transparent(SelectedColor, SelectedSize);
+                }
             }
+            catch (Exception)
+            {
+
+
+            }
+
 
         }
 
@@ -205,7 +229,30 @@ namespace FW1
 
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
+            switch (MyBrush)
+            {
+                case "Circle":
+                    _selectedBrush = new Circle(MyColor, SelectedSize);
+                    break;
+                case "QuadBrush":
+                    _selectedBrush = new QuadBrush(MyColor, SelectedSize);
+                    break;
+                case "RandBrush":
+                    _selectedBrush = new RandBrush(MyColor, SelectedSize);
+                    break;
+                case "Transparent":
 
+                    _selectedBrush = new Transparent(MyColor, SelectedSize);
+                    break;
+                case "Eraser":
+
+                    _selectedBrush = new Eraser(Color.White, SelectedSize);
+                    break;
+
+
+                default:
+                    break;
+            }
         }
 
         private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -247,11 +294,14 @@ namespace FW1
 
             MessageBox.Show(fileContent, "File Content at path: " + filePath, MessageBoxButtons.OK);
 
+            image1 = Image.FromFile(filePath);
             pictureBox1.Image = Image.FromFile(filePath);
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
 
             CreateBlank(pictureBox1.Image.Width, pictureBox1.Image.Height);
             pictureBox1.Image = Image.FromFile(filePath);
+            Brush.H = pictureBox1.Image.Height;
+            Brush.W = pictureBox1.Image.Width;
 
 
 
@@ -260,6 +310,7 @@ namespace FW1
         private void Brush4_Click(object sender, EventArgs e)
         {
             _selectedBrush = new Circle(SelectedColor, SelectedSize);
+            MyBrush = "Circle";
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -270,6 +321,10 @@ namespace FW1
             if (form.Canceled == false)
             {
                 CreateBlank(form.W, form.H);
+                ImW = form.W;
+                ImH = form.H;
+                Brush.W = form.W;
+                Brush.H = form.H;
             }
 
             
@@ -290,37 +345,237 @@ namespace FW1
         private void button1_Click(object sender, EventArgs e)
         {
             MyColor = Color.Black;
+            switch (MyBrush)
+            {
+                case "Circle":
+                    _selectedBrush = new Circle(MyColor, SelectedSize);
+                    break;
+                case "QuadBrush":
+                    _selectedBrush = new QuadBrush(MyColor, SelectedSize);
+                    break;
+                case "RandBrush":
+                    _selectedBrush = new RandBrush(MyColor, SelectedSize);
+                    break;
+                case "Transparent":
+                  
+                    _selectedBrush = new Transparent(MyColor, SelectedSize);
+                    break;
+                case "Eraser":
+
+                    _selectedBrush = new Eraser(Color.White, SelectedSize);
+                    break;
+
+
+                default:
+                    break;
+            }
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             MyColor = Color.Blue;
+            switch (MyBrush)
+            {
+                case "Circle":
+                    _selectedBrush = new Circle(MyColor, SelectedSize);
+                    break;
+                case "QuadBrush":
+                    _selectedBrush = new QuadBrush(MyColor, SelectedSize);
+                    break;
+                case "RandBrush":
+                    _selectedBrush = new RandBrush(MyColor, SelectedSize);
+                    break;
+                case "Transparent":
+                    
+                    _selectedBrush = new Transparent(MyColor, SelectedSize);
+                    break;
+                case "Eraser":
+
+                    _selectedBrush = new Eraser(Color.White, SelectedSize);
+                    break;
+
+
+                default:
+                    break;
+            }
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             MyColor = Color.Green;
+            switch (MyBrush)
+            {
+                case "Circle":
+                    _selectedBrush = new Circle(MyColor, SelectedSize);
+                    break;
+                case "QuadBrush":
+                    _selectedBrush = new QuadBrush(MyColor, SelectedSize);
+                    break;
+                case "RandBrush":
+                    _selectedBrush = new RandBrush(MyColor, SelectedSize);
+                    break;
+                case "Transparent":
+                    
+                    _selectedBrush = new Transparent(MyColor, SelectedSize);
+                    break;
+                case "Eraser":
+
+                    _selectedBrush = new Eraser(Color.White, SelectedSize);
+                    break;
+
+
+                default:
+                    break;
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             MyColor = Color.Red;
+            switch (MyBrush)
+            {
+                case "Circle":
+                    _selectedBrush = new Circle(MyColor, SelectedSize);
+                    break;
+                case "QuadBrush":
+                    _selectedBrush = new QuadBrush(MyColor, SelectedSize);
+                    break;
+                case "RandBrush":
+                    _selectedBrush = new RandBrush(MyColor, SelectedSize);
+                    break;
+                case "Transparent":
+                   
+                    _selectedBrush = new Transparent(MyColor, SelectedSize);
+                    break;
+                case "Eraser":
+
+                    _selectedBrush = new Eraser(Color.White, SelectedSize);
+                    break;
+
+
+                default:
+                    break;
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             MyColor = Color.Yellow;
+            switch (MyBrush)
+            {
+                case "Circle":
+                    _selectedBrush = new Circle(MyColor, SelectedSize);
+                    break;
+                case "QuadBrush":
+                    _selectedBrush = new QuadBrush(MyColor, SelectedSize);
+                    break;
+                case "RandBrush":
+                    _selectedBrush = new RandBrush(MyColor, SelectedSize);
+                    break;
+                case "Transparent":
+                    
+                    _selectedBrush = new Transparent(MyColor, SelectedSize);
+                    break;
+                case "Eraser":
+
+                    _selectedBrush = new Eraser(Color.White, SelectedSize);
+                    break;
+
+
+                default:
+                    break;
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             MyColor = Color.White;
+
+            switch (MyBrush)
+            {
+                case "Circle":
+                    _selectedBrush = new Circle(MyColor, SelectedSize);
+                    break;
+                case "QuadBrush":
+                    _selectedBrush = new QuadBrush(MyColor, SelectedSize);
+                    break;
+                case "RandBrush":
+                    _selectedBrush = new RandBrush(MyColor, SelectedSize);
+                    break;
+                case "Transparent":
+                    
+                    _selectedBrush = new Transparent(MyColor, SelectedSize);
+                    break;
+                case "Eraser":
+
+                    _selectedBrush = new Eraser(Color.White, SelectedSize);
+                    break;
+
+
+                default:
+                    break;
+            }
+        }
+
+        private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (image1 == null)
+            {
+                _selectedBrush = new Circle(Color.White, SelectedSize);
+                MyBrush = "Eraser";
+            }
+            else
+            {
+                MyBrush = "Eraser";
+                Bitmap bmp19 = (Bitmap)image1;
+                Eraser.ReloadBmp(bmp19);
+                _selectedBrush = new Eraser(Color.White, SelectedSize);
+            }
+
+
+        }
+
+        private void saveToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Image != null) //если в pictureBox есть изображение
+            {
+                Image image = pictureBox1.Image;
+                //создание диалогового окна "Сохранить как..", для сохранения изображения
+                SaveFileDialog savedialog = new SaveFileDialog();
+                savedialog.Title = "Сохранить картинку как...";
+                //отображать ли предупреждение, если пользователь указывает имя уже существующего файла
+                savedialog.OverwritePrompt = true;
+                //отображать ли предупреждение, если пользователь указывает несуществующий путь
+                savedialog.CheckPathExists = true;
+                //список форматов файла, отображаемый в поле "Тип файла"
+                savedialog.Filter = "Image Files(*.BMP)|*.BMP|Image Files(*.JPG)|*.JPG|Image Files(*.GIF)|*.GIF|Image Files(*.PNG)|*.PNG|All files (*.*)|*.*";
+                //отображается ли кнопка "Справка" в диалоговом окне
+                savedialog.ShowHelp = true;
+                if (savedialog.ShowDialog() == DialogResult.OK) //если в диалоговом окне нажата кнопка "ОК"
+                {
+                    try
+                    {
+                        image.Save(savedialog.FileName, System.Drawing.Imaging.ImageFormat.Jpeg);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Невозможно сохранить изображение", "Ошибка",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
         }
 
         private void Brush3_Click(object sender, EventArgs e)
         {
-            Color brushColor1 = Color.FromArgb(250 / 100 * 25, 255, 0, 0);
-            _selectedBrush = new Transparent(brushColor1, SelectedSize, pictureBox1.Width, pictureBox1.Height);
+            
+            _selectedBrush = new Transparent(MyColor, SelectedSize);
+            MyBrush = "Transparent";
 
         }
 

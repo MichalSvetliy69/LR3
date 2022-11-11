@@ -13,11 +13,11 @@ namespace FW1
     internal class Transparent : Brush
     {
         int[,] mass;
-        int W, H;
-        public Transparent(Color BrushColor, int size,int W,int H) : base(BrushColor, size)
+
+
+        public Transparent(Color BrushColor, int size) : base(BrushColor, size)
         {
-            this.W = W;
-            this.H = H;
+
             this.mass = new int[W, H];
             for (int i = 0; i < W; i++)
             {
@@ -34,42 +34,31 @@ namespace FW1
             {
                 for (int x0 = x - Size; x0 < x + Size; ++x0)
                 {
-                    try
+                    if (x0 > 0 & y0 > 0 & x0 < W & y0 < H)
                     {
                         if (mass[x0, y0] != 1)
                         {
 
 
-                            try
-                            {
-                                Color ImColor = image.GetPixel(x0, y0);
-                                int R = ImColor.R;
-                                int G = ImColor.G;
-                                int B = ImColor.B;
-                                int R1 = BrushColor.R;
-                                int G1 = BrushColor.G;
-                                int B1 = BrushColor.B;
-                                int R2 = (R + R1) / 2;
-                                int G2 = (G + G1) / 2;
-                                int B2 = (B + B1) / 2;
-                                ImColor = Color.FromArgb(100, R2, G2, B2);
-                                image.SetPixel(x0, y0, ImColor);
+                            Color ImColor = image.GetPixel(x0, y0);
+                            int R = ImColor.R;
+                            int G = ImColor.G;
+                            int B = ImColor.B;
+                            int R1 = BrushColor.R;
+                            int G1 = BrushColor.G;
+                            int B1 = BrushColor.B;
+                            int R2 = (R + R1) / 2;
+                            int G2 = (G + G1) / 2;
+                            int B2 = (B + B1) / 2;
+                            ImColor = Color.FromArgb(100, R2, G2, B2);
+                            image.SetPixel(x0, y0, ImColor);
 
-                            }
-                            catch (Exception)
-                            {
-
-
-                            }
                             mass[x0, y0] = 1;
 
                         }
                     }
-                    catch (Exception)
-                    {
-
-
-                    }
+                        
+                        
                     
                 }
 

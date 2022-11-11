@@ -13,10 +13,13 @@ namespace FW1
 
     internal class RandBrush:Brush
     {
+
         public RandBrush(Color BrushColor, int size) : base(BrushColor, size)
         {
 
         }
+
+
 
         public override void Draw(Bitmap image, int x, int y)
         {
@@ -28,15 +31,13 @@ namespace FW1
                     int randomNumber2 = rnd.Next(1, 25);
                     if (randomNumber2 == 5)
                     {
-                        try
+                        if (x0 > 0 & y0 > 0 & x0 < W & y0 <H )
                         {
                             image.SetPixel(x0, y0, BrushColor);
                         }
-                        catch (Exception)
-                        {
 
+                        
 
-                        }
                     }
                    
 
